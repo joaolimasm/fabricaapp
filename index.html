@@ -9,27 +9,21 @@
 </head>
 
 <body>
-    <div id="login">
-        Bem vindo...
-    </div>
-    <br/> <br/>
+    <form method="POST" onsubmit="">
 
-    <button onclick="entrar()">Entrar</button>
+        <input type="text" name="nome" onfocus="focado()" onblur="desfocado()"> <br/> <br/>
 
-    <div id="login2">
-        Bem vindo...
-    </div>
-    <br/> <br/>
+        <select name="cidades" onchange="opcaoSelecionada(this)">
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Brasília</option>
+            <option>Goiania</option>
+                                
+        </select><br/><br/>
+        <input type="submit" value="enviar">
 
-    <button onclick="entrar2('Jhon')">Entrar</button>
 
-    <div id="idade">
-        sua idade é:
-    </div>
-    <br/> <br/>
-
-    <button onclick="idade1('idade')">Entrar</button>
-
+    </form>
 
 
 
