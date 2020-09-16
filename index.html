@@ -5,26 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+    <style type="text/css">
+        .balao {
+            margin-top: 50px;
+            width: 50px;
+            height: 60px;
+            background-color: #000000;
+            border-radius: 30px;
+            position: absolute;
+        }
+    </style>
     <script type="text/javascript" src="script.js"></script>
+
 </head>
 
-<body>
-    <form method="POST" onsubmit="">
 
-        <input type="text" name="nome" onfocus="focado()" onblur="desfocado()"> <br/> <br/>
-
-        <select name="cidades" onchange="opcaoSelecionada(this)">
-            <option>São Paulo</option>
-            <option>Rio de Janeiro</option>
-            <option>Brasília</option>
-            <option>Goiania</option>
-                                
-        </select><br/><br/>
-        <input type="submit" value="enviar">
-
-
-    </form>
-
+<body onload="carregarJogo()">
+    <h3 id="total"></h3>
+    <h3 id="cont"></h3>
 
 
 </body>
