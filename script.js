@@ -1,26 +1,13 @@
-var total = 0;
-var cont = 0;
+function cadastrar(usuarios, ...novosusuarios) {
+    let totalUsuarios = [
+        ...usuarios,
+        ...novosusuarios
 
-function criarBalao() {
-    var balao = document.createElement("div");
-    balao.setAttribute("class", "balao");
+    ];
+    return console.log(totalUsuarios);
 
-    var x = Math.floor(Math.random() * 600);
-    var y = Math.floor(Math.random() * 400);
-
-    balao.setAttribute("style", "left:" + x + "px;top:" + y + "px;");
-    balao.setAttribute("onclick", "estourar(this)");
-    document.body.appendChild(balao);
 }
 
-function estourar(objeto) {
-    document.body.removeChild(objeto);
+let usuarios = ["jhon", "magalhaes"];
 
-    total++;
-    var score = document.getElementById('total');
-    score.innerHTML = "balões estourados: " + total;
-}
-
-function carregarJogo() {
-    setInterval(criarBalao, 1000);
-}
+let novosusuarios = cadastrar(usuarios, "joao", "lima");
